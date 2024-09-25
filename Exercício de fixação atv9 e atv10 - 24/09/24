@@ -1,0 +1,41 @@
+ function atv9(){
+    let n1 = Number(prompt("Digite um número!"));
+    let n2 = Number(prompt("Digite o possivel multiplo!"));
+    if(n2 % n1 == 0){
+        alert(n2+" é multiplo de "+n1);
+    }
+    else{
+        alert(n2+" não é multiplo de "+n1);
+    }
+   }
+
+   function verificaseEhPrimo(i){
+    let qtdDivisores = 0;
+ for (let ant = 1;ant <= i; ant++)  
+    {
+        if(i % ant == 0){
+            qtdDivisores ++;
+        }
+        ant ++;
+    }
+    if(qtdDivisores == 2){
+        return true;
+    }else{
+        return false
+        
+    }
+   }
+
+   function atv10(){
+    let n = Number(prompt("Digite um número!"));
+    let primos = "";
+    for(let i = 1 ; i <= n; i ++){
+        if(verificaseEhPrimo(i)== true){
+            primos +="\n"+i
+        }
+    }
+ alert (primos);
+   }
+
+
+
