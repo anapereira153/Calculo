@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício</title>
+    <title>Login Page</title>
 </head>
 <body>
-  <h1>Exercício de Fixação</h1>
-  <button onclick ="atv1()">Contar de 1 a N</button><br>
-  <button onclick ="atv2()">Somar Números Até Zero</button><br>
-  <button onclick ="atv3()">Media Aritimetica</button><br>
-  <button onclick ="atv4()">Fatorial de um Número</button><br>
-  <button onclick ="atv5()">Tabela de Multiplicação</button><br>
-  <button onclick ="atv6()">Pares de 1 a N</button><br>
-  <button onclick ="atv7()">Contar Até N com Passo Personalizado</button><br>
-  <button onclick ="atv8()">Ímpares de 1 a N</button><br>
-  <button onclick ="atv9()">Múltiplos</button><br>
-  <button onclick="atv10()">primos</button><br>
+    <div class="container">
+        <h1>Sistema de login</h1>
 
-<script src="script.js"></script>
+<div class="register">
+    <h3>Cadastro de Usuário</h3>
+    <label for="username">Nome do Usuário</label>
+    <input type="text" id="username" placeholder="Ex: Ana">
+    <button onclick="add()" id="adiciona">Cadastrar</button>
 
+    </div>
+    <div class="login">
+        <h3>Login de Usuário</h3> 
+        <label for="user">Nome do Usuário</label>
+        <input type="text" id="user" placeholder="Ex: Ana">
+        <button onclick="login()" id="logar">logar</button>
+
+    </div>
+</div>
+    <script src="script.js"></script>
 </body>
 </html>
